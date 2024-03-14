@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 'Gilroy';
+    color: black;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: blanchedalmond;
+   display: flex;
+   justify-content: space-between;
+}
+.nav{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+} 
+
+.logo{
+    height: 100%;
+}
+.heading{
+    margin-left: 5%;
+        color: #dab026;
+        font-family: "Oswald";
+        font-size: 3vw;
+}
+.items{
+    display: flex;
+    font-size: 2vw;
+    gap: 3vw;
+    align-items: center;
+}
+
+.items i{
+    font-size: 3vw;
+    font-weight: 800;
+    display: none;
+}
+.content{
+    background-color: blanchedalmond;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    padding: 4vw 2vw;
+    font-size: 2vw;
+    color: black;
+}
+.right{
+    height: 100%;
+    width: 50%;
+}
+.left p{
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+}
+.left span{
+    color: goldenrod;
+}
+.left button{
+    height: 3.5vw;
+    font-size: 2vw;
+    padding: 0vw 2vw;
+    background-color: #433F43;
+    color: wheat;
+    border: none;
+    border-radius: 5%;
+}
+
+.items button{
+    height: 2vw;
+    width: 7vw;
+    font-size: 0.7vw;
+    background-color: black;
+    border: none;
+    color: white;
+}
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:600px) {
+    .nav{
+        height: 35px;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    }
+
+    .nav h2{
+        font-size: 3vw;
+        padding: 0 5vw;
+    }
+    .items button{
+        height: 6vw;
+        width: 12vw;
+        font-size: 2vw;
+        right: 60%;
+    }
+    .right img{
+        height: 55%;
+        width: 100%;
+    }
+    .items h4{
+        display: none;
+    }
+    .items i{
+        display: block;
+        font-size: 5vw;
+    }
+    
+    .left{
+        height: 70%;
+        width: 70%;
+        font-size:3.5vw;
+    }
+    .left p{
+        font-size: 4vw;
+    }
+    .left button{
+        font-size: 5vw;
+        height: 8vw;
+        margin-top: 2vw;
+        border-radius: 20%;
+    }
+    .logo{
+        height: 95%;
+        background-color: brown;
+    }
+    .heading{
+        margin-left: 5%;
+        color: #dab026;
+        font-family: "Oswald";
+    }
+    
+}
